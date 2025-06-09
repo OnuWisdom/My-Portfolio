@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wisdom Portfolio</title>
+
+		<meta
+			name="description"
+			content="Portfolio of a web developer specializing in HTML, CSS, and JavaScript"
+		/>
+		<meta name="author" content="Onu Wisdom" />
+
+		<meta property="og:title" content="Portfolio - Web Developer" />
+		<meta
+			property="og:description"
+			content="Portfolio of a web developer specializing in HTML, CSS, and JavaScript"
+		/>
+		<meta property="og:type" content="website" />
+
+		<link rel="stylesheet" href="./css/portfolio.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<header class="header">
+			<nav class="navbar">
+				<div class="nav-container">
+					<div class="nav-logo">
+						<i class="fas fa-code"></i>
+						Portfolio
+					</div>
+					<ul class="nav-menu">
+						<li class="nav-item">
+							<a href="#home" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#skills" class="nav-link">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a href="#projects" class="nav-link">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+						<li class="nav-item">
+							<button
+								id="theme-toggle"
+								class="theme-toggle"
+								aria-label="Toggle theme"
+							>
+								<i class="fas fa-moon"></i>
+							</button>
+						</li>
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Hero Section -->
+		<section id="home" class="hero">
+			<div class="hero-content">
+				<h1 class="hero-title">
+					Hello, I'm <span class="highlight">Onu Wisdom</span>
+				</h1>
+				<h4 class="hero-supertitle">
+					Alias: <span class="highlight">codeSeven_7</span>
+				</h4>
+				<p class="hero-subtitle">
+					Web Developer specializing in HTML, CSS & JavaScript
+				</p>
+				<p class="hero-description">
+					I create beautiful, responsive websites using core web technologies.
+					Currently expanding my skills by learning React.
+				</p>
+				<div class="hero-buttons">
+					<a href="#projects" class="btn btn-primary">View My Work</a>
+					<a href="#contact" class="btn btn-secondary">Get In Touch</a>
+				</div>
+			</div>
+			<div class="hero-image">
+				<div class="code-animation">
+					<div class="code-line"></div>
+					<div class="code-line"></div>
+					<div class="code-line"></div>
+					<div class="code-line"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section id="about" class="about">
+			<div class="container">
+				<h2 class="section-title">About Me</h2>
+				<div class="about-content">
+					<div class="about-text">
+						<p>
+							I'm a passionate web developer with a strong foundation in HTML,
+							CSS, and JavaScript. I love creating clean, efficient, and
+							user-friendly websites that provide excellent user experiences.
+						</p>
+						<p>
+							While I'm most comfortable with vanilla web technologies, I'm
+							actively learning React to expand my skill set and stay current
+							with modern web development practices.
+						</p>
+						<div class="about-stats">
+							<div class="stat">
+								<h3>20+</h3>
+								<p>Projects Completed</p>
+							</div>
+							<div class="stat">
+								<h3>2+</h3>
+								<p>Years Experience</p>
+							</div>
+							<div class="stat">
+								<h3>100%</h3>
+								<p>Client Satisfaction guaranteed</p>
+							</div>
+						</div>
+					</div>
+					<div class="about-image">
+						<div class="image-placeholder">
+							<!-- <i class="fas fa-user-tie"></i> -->
+							<img
+								src="./assets/WISDOM.jpeg"
+								alt="Wisdom"
+								width="200px"
+								class="image-placeholder"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills Section -->
+		<section id="skills" class="skills">
+			<div class="container">
+				<h2 class="section-title">My Skills</h2>
+				<div class="skills-grid">
+					<div class="skill-card">
+						<div class="skill-icon">
+							<i class="fab fa-html5"></i>
+						</div>
+						<h3>HTML5</h3>
+						<p>Semantic markup, accessibility, and modern HTML practices</p>
+						<div class="skill-level">
+							<div class="skill-bar" data-level="95"></div>
+						</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-icon">
+							<i class="fab fa-css3-alt"></i>
+						</div>
+						<h3>CSS3</h3>
+						<p>Responsive design, animations, Grid, Flexbox, and modern CSS</p>
+						<div class="skill-level">
+							<div class="skill-bar" data-level="90"></div>
+						</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-icon">
+							<i class="fab fa-js-square"></i>
+						</div>
+						<h3>JavaScript</h3>
+						<p>ES6+, DOM manipulation, async programming, and modern JS</p>
+						<div class="skill-level">
+							<div class="skill-bar" data-level="85"></div>
+						</div>
+					</div>
+					<div class="skill-card">
+						<div class="skill-icon">
+							<i class="fab fa-react"></i>
+						</div>
+						<h3>React</h3>
+						<p>
+							Currently learning components, hooks, and modern React patterns
+						</p>
+						<div class="skill-level">
+							<div class="skill-bar" data-level="40"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="projects" class="projects">
+			<div class="container">
+				<h2 class="section-title">Featured Projects</h2>
+				<div class="projects-grid">
+					<div class="project-card">
+						<div class="project-image">
+							<i class="fas fa-shopping-cart"></i>
+							<img
+								src="./assets/wixflixx.png"
+								alt="wixflixx"
+								width="200px"
+								class="imgage"
+							/>
+						</div>
+						<div class="project-content">
+							<h3>WIXFLIXX- Movie and TV hub</h3>
+							<p>
+								An Ultimate movie and TV show Hub built with HTML, CSS, and
+								JavaScript featuring smooth routing, API requests and DOM
+								manipulations.
+							</p>
+							<div class="project-tech">
+								<span class="tech-tag">HTML</span>
+								<span class="tech-tag">CSS</span>
+								<span class="tech-tag">JavaScript</span>
+							</div>
+							<div class="project-links">
+								<a href="https://wixflixx.netlify.app/" class="btn btn-small"
+									>Live Demo</a
+								>
+								<a
+									href="https://github.com/OnuWisdom/WixFlixx"
+									class="btn btn-small btn-outline"
+									>Code</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="project-card">
+						<div class="project-image">
+							<i class="fas fa-calculator"></i>
+							<img
+								src="./assets/shoppinglist.png"
+								alt="shopping_list_UI"
+								width="200px"
+								class="imgage"
+							/>
+						</div>
+						<div class="project-content">
+							<h3>Shopping List UI</h3>
+							<p>
+								A Basic shopping list UI built with HTML, CSS, and JavaScript.
+								Features include adding, removing items, and local storage.
+							</p>
+							<div class="project-tech">
+								<span class="tech-tag">HTML</span>
+								<span class="tech-tag">CSS</span>
+								<span class="tech-tag">JavaScript</span>
+							</div>
+							<div class="project-links">
+								<a
+									href="https://shoppinglistui.netlify.app/"
+									class="btn btn-small"
+									>Live Demo</a
+								>
+								<a
+									href="https://gitdocify.com/OnuWisdom/Shopping-List-UI"
+									class="btn btn-small btn-outline"
+									>Code</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="project-card">
+						<div class="project-image">
+							<i class="fas fa-tasks"></i>
+							<img
+								src="./assets/whizfirstwebpage.png"
+								alt="whiz_first_webpage"
+								width="200px"
+								class="imgage"
+							/>
+						</div>
+						<div class="project-content">
+							<h3>Basic Landing Page</h3>
+							<p>
+								A simple landing page built with HTML, CSS, and JavaScript.
+								Features include a responsive layout and smooth scrolling.
+							</p>
+							<div class="project-tech">
+								<span class="tech-tag">HTML</span>
+								<span class="tech-tag">CSS</span>
+								<span class="tech-tag">JavaScript</span>
+							</div>
+							<div class="project-links">
+								<a
+									href="https://whiz-first-webpage.netlify.app/"
+									class="btn btn-small"
+									>Live Demo</a
+								>
+								<a
+									href="https://github.com/OnuWisdom/Whiz-First-Webpage"
+									class="btn btn-small btn-outline"
+									>Code</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="project-card">
+						<div class="project-image">
+							<i class="fas fa-tasks"></i>
+							<img
+								src="./assets/user_generator.png"
+								alt="random_user_generator"
+								width="200px"
+								class="imgage"
+							/>
+						</div>
+						<div class="project-content">
+							<h3>Random User Generator</h3>
+							<p>
+								A simple random user generator built with HTML, CSS, and
+								JavaScript. Features include fetching random user data from an
+								API and displaying it in a user-friendly format.
+							</p>
+							<div class="project-tech">
+								<span class="tech-tag">HTML</span>
+								<span class="tech-tag">CSS</span>
+								<span class="tech-tag">JavaScript</span>
+							</div>
+							<div class="project-links">
+								<a
+									href="https://randomuser-generators.netlify.app/"
+									class="btn btn-small"
+									>Live Demo</a
+								>
+								<a
+									href="https://github.com/OnuWisdom/Random-User-Generator"
+									class="btn btn-small btn-outline"
+									>Code</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="contact">
+			<div class="container">
+				<h2 class="section-title">Get In Touch</h2>
+				<div class="contact-content">
+					<div class="contact-info">
+						<h3>Let's work together!</h3>
+						<p>
+							I'm always interested in new opportunities and exciting projects.
+							Whether you're looking for a developer, have a question, or just
+							want to say hi, I'd love to hear from you
+						</p>
+						<div class="contact-methods">
+							<div class="contact-method">
+								<i class="fas fa-envelope"></i>
+								<span>onuwisdom2000@gmail.com</span>
+							</div>
+							<div class="contact-method">
+								<i class="fas fa-phone"></i>
+								<span>+234 816 4802 169</span>
+							</div>
+							<div class="contact-method">
+								<i class="fas fa-map-marker-alt"></i>
+								<span>Lagos, Nigeria</span>
+							</div>
+						</div>
+						<div class="social-links">
+							<a href="https://github.com/OnuWisdom" class="social-link">
+								<i class="fab fa-github"></i>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/wisdom-onu-5450a434b/"
+								class="social-link"
+							>
+								<i class="fab fa-linkedin"></i>
+							</a>
+							<a href="https://x.com/whisdomseven" class="social-link">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+					<form class="contact-form">
+						<div class="form-group">
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder="Your Name"
+								required
+							/>
+						</div>
+						<div class="form-group">
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Your Email"
+								required
+							/>
+						</div>
+						<div class="form-group">
+							<textarea
+								id="message"
+								name="message"
+								placeholder="Your Message"
+								rows="5"
+								required
+							></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Send Message</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<p>
+					&copy; 2024 Onu Wisdom (codeSeven_7). Built with HTML, CSS &
+					JavaScript.
+				</p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
